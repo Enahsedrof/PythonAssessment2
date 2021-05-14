@@ -118,10 +118,17 @@ def three(a):
     # How would you seperate a string into characters?
 
 def four(input1, input2):
-    a = list(input1)
-    b = list(input2)
-    x = zip(a, b)
-    return x
+    strings = list(zip(input1, input2))
+    temp = []
+    for sub in strings:
+        temp.append("".join(sub))
+
+    output = "".join(temp)
+    return output
+    # a = list(input1)
+    # b = list(input2)
+    # x = zip(a, b)
+    # return x
 
     # <QUESTION 5>
 
