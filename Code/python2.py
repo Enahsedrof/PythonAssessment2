@@ -82,6 +82,11 @@ def two(n):
     # What happens if you multiply a string by a number?
 
 def three(a):
+    x = 4
+    number = 0
+    for i in range(1,x+1):
+        number += int(str(a)*i)
+    return number
 
     return ""
 
@@ -207,6 +212,7 @@ def seven(a, b, c):
     # Use the cli to access the documentation help(str.replace)
 
 def eight(input,  a):
+    x = len(input)
     return ""
 
     # <QUESTION 9>
@@ -224,7 +230,21 @@ def eight(input,  a):
     # There are no hints for this question.
 
 def nine(string1, string2):
-    return False
+    x = len(string1)
+    y = len(string2)
+
+    j = 0
+    i = 0
+
+    while j < x and i < y:
+        if string1[j] == string2[i]:
+            j += j
+        i += i 
+        return True
+    else:
+         return False
+
+    
 
     # <QUESTION 10>
 
@@ -242,4 +262,10 @@ def nine(string1, string2):
     # Think about nesting for loops.
 
 def ten(X,Y):
-    return []
+    row = 2
+    col = 2
+    array = [[0 for col in range(col)] for  row in range(row)]
+    for X in range(row):
+        for Y in range(col):
+            array[X][Y] = X*Y
+    return array
