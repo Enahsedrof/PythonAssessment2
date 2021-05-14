@@ -183,6 +183,12 @@ def six(str):
     # Use the cli to access the documentation help(list.sort)
 
 def seven(a, b, c):
+    list = [a, b, c]
+    list = list.sort()
+
+    if (a - b == b - c) or (a - c == c - b) or (a - b == c - a):
+        return True
+
     return False
 
     # <QUESTION 8>
