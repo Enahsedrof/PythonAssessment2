@@ -155,6 +155,7 @@ def five():
     # There are no hints for this question.
     
 def six(str):
+    str = str.lower()
     if str.endswith("py"):
         return True
     else:
