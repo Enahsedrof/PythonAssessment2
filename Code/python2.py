@@ -82,7 +82,9 @@ def two(n):
     # What happens if you multiply a string by a number?
 
 def three(a):
-    return 1
+
+    return ""
+
 
     # <QUESTION 4>
 
@@ -111,7 +113,10 @@ def three(a):
     # How would you seperate a string into characters?
 
 def four(input1, input2):
-    return ""
+    a = list(input1)
+    b = list(input2)
+    x = zip(a, b)
+    return x
 
     # <QUESTION 5>
 
@@ -128,7 +133,10 @@ def four(input1, input2):
     # The random module contains a function called randint.
 
 def five():
-    return []
+    import random
+    x = random.sample([i for i in range(100,200) if i%2==0], 5)
+    return x
+    
 
     # <QUESTION 6>
 
@@ -146,8 +154,11 @@ def five():
     # <HINT>
     # There are no hints for this question.
     
-def six(input):
-    return False
+def six(str):
+    if str.endswith("py"):
+        return True
+    else:
+        return False
 
     # <QUESTION 7>
 
