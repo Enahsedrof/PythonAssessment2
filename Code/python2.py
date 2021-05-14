@@ -29,12 +29,11 @@
     # <HINT>
     # How does a for loop iterate through a string?
 
-def one(input):
-    new_str = ""
-    for char in str:
-        new_str += char*2
-    return new_str
-
+def one(str):
+    outstr = ''
+    for character in str:
+        outstr = outstr + character + character + character
+    return outstr
     # <QUESTION 2>
 
     #  Write a function which returns the boolean True if the input is only divisible by one and itself.
